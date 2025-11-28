@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Boutique - L'application de gestion ultime</title>
+    <meta name="description" content="Gérez votre stock, vos ventes et vos dettes 100% hors ligne. Application mobile pour commerçants au Mali.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i data-lucide="store"></i> Gestion Boutique
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#pricing">Prix</a></li>
+                    <li><a href="#guide">Guide</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Mode sombre">
+                        <i data-lucide="moon"></i>
+                    </button>
+                    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section hero" id="home">
+        <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+            <div class="hero-content">
+                <h1 class="hero-title">Gérez votre commerce <br><span>Sans Internet.</span></h1>
+                <p class="hero-desc">
+                    L'application complète pour les commerçants maliens. Caisse, Stock, Dettes et Factures PDF. 
+                    Payez une fois, utilisez à vie.
+                </p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; md:justify-content: flex-start;">
+                    <a href="#" class="btn btn-primary">
+                        <i data-lucide="download"></i> Télécharger l'App
+                    </a>
+                    <a href="#features" class="btn btn-outline">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="screen-content"></div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir Gestion Boutique ?</h2>
+            <p class="section-subtitle">Conçue pour les réalités du terrain, simple, rapide et sécurisée.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="wifi-off" size="32"></i></div>
+                    <h3 class="feature-title">100% Hors Ligne</h3>
+                    <p>Travaillez toute la journée sans connexion. Vos données sont sauvegardées sur votre téléphone et synchronisées quand vous voulez.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="shopping-cart" size="32"></i></div>
+                    <h3 class="feature-title">Caisse Intelligente</h3>
+                    <p>Calculez le total, la monnaie à rendre et gérez les dettes automatiquement si le montant est insuffisant.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="file-text" size="32"></i></div>
+                    <h3 class="feature-title">Factures Pro</h3>
+                    <p>Générez des factures PDF avec votre logo et signature. Partagez-les sur WhatsApp en un clic.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="shield-check" size="32"></i></div>
+                    <h3 class="feature-title">Sécurité des données</h3>
+                    <p>Vos données sont isolées et sécurisées. Gérez vos vendeurs avec des accès limités.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--bg-card);">
+        <div class="container">
+            <h2 class="section-title">Aperçu de l'application</h2>
+            <div class="screenshots-grid">
+                <img src="assets/image_1.PNG" class="screenshot-item" alt="Dashboard">
+                <img src="assets/image_2.PNG" class="screenshot-item" alt="Caisse">
+                <img src="assets/image_3.PNG" class="screenshot-item" alt="Historique">
+                <img src="assets/image_4.PNG" class="screenshot-item" alt="Facture">
+                <img src="assets/image_5.PNG" class="screenshot-item" alt="Produits">
+                <img src="assets/image_6.PNG" class="screenshot-item" alt="Validation vente">
+                <img src="assets/image_7.PNG" class="screenshot-item" alt="Personnalisation">
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="container">
+            <div class="pricing-card">
+                <h3>Licence à Vie</h3>
+                <div class="price">50.000 <span>FCFA</span></div>
+                <p>Payez une seule fois, l'application est à vous pour toujours.</p>
+                
+                <ul class="features-list">
+                    <li><i data-lucide="check"></i> Accès illimité sans abonnement</li>
+                    <li><i data-lucide="check"></i> Mises à jour gratuites</li>
+                    <li><i data-lucide="check"></i> Support technique WhatsApp</li>
+                    <li><i data-lucide="check"></i> Sauvegarde Cloud incluse</li>
+                </ul>
+                <br>
+                <a href="https://wa.me/22371383205" class="btn btn-white">Acheter maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="section">
+        <div class="container">
+            <h2 class="section-title">Comment commencer ?</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="guide-content">
+                        <h3>Téléchargez et Installez</h3>
+                        <p>Cliquez sur le bouton "Télécharger" pour obtenir le fichier APK. Ouvrez-le et autorisez l'installation.</p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="guide-content">
+                        <h3>Créez votre compte Admin</h3>
+                        <p>Ouvrez l'application. Cliquez sur "Créer un compte Admin". Remplissez le formulaire (Nom, Email, Mot de passe). Internet requis.</p>
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="guide-content">
+                        <h3>Demandez l'activation</h3>
+                        <p>Vous verrez un écran d'attente. Cliquez sur le bouton vert <b>"Activer via WhatsApp"</b>. Votre compte sera validé après paiement.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h3>Gestion Boutique</h3>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">La solution n°1 pour les commerçants au Mali.</p>
+            
+            <div class="socials">
+                <a href="https://web.facebook.com/profile.php?id=100004122586881"><i data-lucide="facebook"></i></a>
+                <a href="https://wa.me/22371383205"><i data-lucide="message-circle"></i></a>
+            </div>
+            
+            <p style="font-size: 0.9rem; margin-top: 30px;">&copy; 2025 Fousseyni Djenika. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
