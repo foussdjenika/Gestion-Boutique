@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boubacar Maïga - Artiste 3D/2D & VFX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Cinematic Intro -->
+    <section id="intro" class="intro-section active">
+        <div class="intro-bg"></div>
+        <div class="intro-content">
+            <h1 class="intro-name">Boubacar Maïga</h1>
+            <p class="intro-title"></p>
+            <button class="enter-btn">Découvrir mon univers</button>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">BM</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#education" class="nav-link">Éducation</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#software" class="nav-link">Logiciels</a></li>
+                <li><a href="#gallery" class="nav-link">Réalisations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>À propos</h2>
+                <div class="about-content" data-reveal>
+                    <div class="profile-image-wrapper">
+                        <img src="assets/profile.jpg" alt="Boubacar Maïga" class="profile-image">
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="about-text">
+                        <p>Passionné par la création visuelle, je suis un graphiste spécialisé en animation 2D et 3D avec quatre [4] ans d'expérience dans le domaine.</p>
+                        <p>Je maîtrise une gamme variée d'outils et de techniques pour produire des animations captivantes et des graphismes innovants.</p>
+                        <p>Mon objectif est de contribuer à des projets créatifs en offrant des solutions visuelles uniques et adaptées aux besoins des clients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>Expérience</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Artiste 3D VFX</h3>
+                            <h4>Kob Industry</h4>
+                            <span class="timeline-date">2023 - À nos jours</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Graphiste 3D</h3>
+                            <h4>Micro Office</h4>
+                            <span class="timeline-date">2024 (6 mois)</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Graphiste 3D</h3>
+                            <h4>01 Studio</h4>
+                            <span class="timeline-date">2022 - 2023</span>
+                            <p>Animation 2D et 3D de jeux vidéos, interface web et mobile, VFX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>Éducation</h2>
+                <div class="education-grid">
+                    <div class="education-card" data-reveal>
+                        <div class="education-icon">🎓</div>
+                        <h3>Diplôme d'études fondamentales</h3>
+                        <p class="education-year">Session 2013 - 2014</p>
+                    </div>
+                    <div class="education-card" data-reveal>
+                        <div class="education-icon">📚</div>
+                        <h3>Certificat d'études primaires</h3>
+                        <p class="education-year">Session 2008 - 2009</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-reveal>
+                        <div class="skill-name">Web Design</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-reveal>
+                        <div class="skill-name">Motion Design</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-reveal>
+                        <div class="skill-name">Drawing</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-reveal>
+                        <div class="skill-name">Animation 2D</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-reveal>
+                        <div class="skill-name">Animation 3D</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="93"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section -->
+        <section id="software" class="section software-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>Logiciels maîtrisés</h2>
+                <div class="software-grid">
+                    <div class="software-card" data-reveal>
+                        <div class="software-icon">🎨</div>
+                        <h3>Blender</h3>
+                    </div>
+                    <div class="software-card" data-reveal>
+                        <div class="software-icon">✨</div>
+                        <h3>Adobe Animate</h3>
+                    </div>
+                    <div class="software-card" data-reveal>
+                        <div class="software-icon">🎬</div>
+                        <h3>Adobe After Effects</h3>
+                    </div>
+                    <div class="software-card" data-reveal>
+                        <div class="software-icon">🎮</div>
+                        <h3>Unreal Engine</h3>
+                    </div>
+                    <div class="software-card" data-reveal>
+                        <div class="software-icon">🌟</div>
+                        <h3>D5 Render</h3>
+                    </div>
+                    <div class="software-card" data-reveal>
+                        <div class="software-icon">🔷</div>
+                        <h3>Maya</h3>
+                    </div>
+                    <div class="software-card" data-reveal>
+                        <div class="software-icon">🎞️</div>
+                        <h3>Cinema 4D</h3>
+                    </div>
+                    <div class="software-card" data-reveal>
+                        <div class="software-icon">🎯</div>
+                        <h3>Unity</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>Réalisations</h2>
+                <div class="gallery-filters" data-reveal>
+                    <button class="filter-btn active" data-filter="all">Tout</button>
+                    <button class="filter-btn" data-filter="images">Images</button>
+                    <button class="filter-btn" data-filter="videos">Vidéos</button>
+                    <button class="filter-btn" data-filter="3d">3D</button>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Placeholder for 20 work items -->
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work1.jpeg" alt="Work 1">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work2.jpeg" alt="Work 2">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="videos" data-reveal>
+                        <img src="assets/works/work3.jpeg" alt="Work 3">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="3d" data-reveal>
+                        <img src="assets/works/work4.jpeg" alt="Work 4">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work5.jpeg" alt="Work 5">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="videos" data-reveal>
+                        <img src="assets/works/work6.jpeg" alt="Work 6">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="3d" data-reveal>
+                        <img src="assets/works/work7.jpeg" alt="Work 7">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work8.jpeg" alt="Work 8">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work9.jpeg" alt="Work 9">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="videos" data-reveal>
+                        <img src="assets/works/work10.jpeg" alt="Work 10">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="3d" data-reveal>
+                        <img src="assets/works/work11.jpeg" alt="Work 11">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work12.jpeg" alt="Work 12">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="videos" data-reveal>
+                        <img src="assets/works/work13.jpeg" alt="Work 13">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work14.jpeg" alt="Work 14">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="3d" data-reveal>
+                        <img src="assets/works/work15.jpeg" alt="Work 15">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work16.jpeg" alt="Work 16">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="videos" data-reveal>
+                        <img src="assets/works/work17.jpeg" alt="Work 17">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work18.jpeg" alt="Work 18">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="3d" data-reveal>
+                        <img src="assets/works/work19.jpeg" alt="Work 19">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="images" data-reveal>
+                        <img src="assets/works/work20.jpeg" alt="Work 20">
+                        <div class="gallery-overlay">
+                            <button class="view-btn">Voir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title" data-reveal>Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info" data-reveal>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>Adresse</h3>
+                                <p>Bolibana, Bamako, Mali</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3>Téléphones</h3>
+                                <p>+223 97 77 11 59</p>
+                                <p>+223 79 32 21 20</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>bmpispa@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🎵</div>
+                            <div>
+                                <h3>TikTok</h3>
+                                <p>@papson_cread</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form" data-reveal>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                            <span class="form-error"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                        <div class="form-success">✓ Message envoyé avec succès!</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Preview" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">↑</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Boubacar Maïga. Tous droits réservés.</p>
+        <p class="footer-credit">Created by <span class="creator-link" id="creator-link">Fouss Djenika</span></p>
+    </footer>
+
+    <!-- Creator Modal -->
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
