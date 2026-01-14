@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion Boutique - L'application de gestion ultime</title>
-    <meta name="description" content="Gérez votre stock, vos ventes et vos dettes 100% hors ligne. Application mobile pour commerçants au Mali.">
+    <meta name="description"
+        content="Gérez votre stock, vos ventes et vos dettes 100% hors ligne. Application mobile pour commerçants au Mali.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
     <header>
@@ -17,11 +20,11 @@
                 <div class="logo">
                     <i data-lucide="store"></i> Gestion Boutique
                 </div>
-                
+
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#features">Fonctionnalités</a></li>
                     <li><a href="#pricing">Prix</a></li>
-                    <li><a href="#guide">Guide</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
@@ -40,23 +43,53 @@
     <section class="section hero" id="home">
         <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
             <div class="hero-content">
-                <h1 class="hero-title">Gérez votre commerce <br><span>Sans Internet.</span></h1>
+                <h1 class="hero-title">Gérez votre boutique en toute simplicité, <br><span>même sans internet.</span>
+                </h1>
                 <p class="hero-desc">
-                    L'application complète pour les commerçants maliens. Caisse, Stock, Dettes et Factures PDF. 
-                    Payez une fois, utilisez à vie.
+                    La solution complète pour suivre vos ventes, gérer votre stock et payer vos employés. Une
+                    application moderne conçue pour les commerçants ambitieux.
                 </p>
-                <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; md:justify-content: flex-start;">
-                    <a href="https://github.com/foussdjenika/Gestion-Boutique/releases/download/Apk/app-release.apk" class="btn btn-primary">
-                        <i data-lucide="download"></i> Télécharger l'App
+                <div
+                    style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; md:justify-content: flex-start;">
+                    <a href="#pricing" class="btn btn-primary">
+                        Acheter Maintenant - 60 000 FCFA
                     </a>
-                    <a href="#features" class="btn btn-outline">
-                        En savoir plus
+                    <a href="https://github.com/foussdjenika/Gestion-Boutique/releases/download/V1.1.0/app-arm64-v8a-release.apk"
+                        class="btn btn-outline">
+                        <i data-lucide="download"></i> Télécharger
                     </a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
-                    <div class="screen-content"></div> 
+                    <div class="screen-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--bg-card);">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir notre solution ?</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="smartphone" size="32"></i></div>
+                    <h3 class="feature-title">100% Mobile & Offline</h3>
+                    <p>Pas besoin de PC, pas besoin de connexion internet permanente. Tout se passe sur votre téléphone
+                        ou tablette.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="layers" size="32"></i></div>
+                    <h3 class="feature-title">Tout-en-un</h3>
+                    <p>Oubliez les cahiers de notes et les fichiers Excel compliqués. Ventes, Dépenses, Dettes, Salaires
+                        : tout est là.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="shield-check" size="32"></i></div>
+                    <h3 class="feature-title">Sécurité Maximale</h3>
+                    <p>Vos données sont sauvegardées automatiquement dès que vous avez internet. En cas de perte de
+                        téléphone, vous ne perdez rien.</p>
                 </div>
             </div>
         </div>
@@ -64,29 +97,67 @@
 
     <section id="features" class="section">
         <div class="container">
-            <h2 class="section-title">Pourquoi choisir Gestion Boutique ?</h2>
-            <p class="section-subtitle">Conçue pour les réalités du terrain, simple, rapide et sécurisée.</p>
-            
+            <h2 class="section-title">Fonctionnalités Clés</h2>
+
+            <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--text-color);">🛒 Pour la Vente</h3>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="wifi-off" size="32"></i></div>
-                    <h3 class="feature-title">100% Hors Ligne</h3>
-                    <p>Travaillez toute la journée sans connexion. Vos données sont sauvegardées sur votre téléphone et synchronisées quand vous voulez.</p>
+                    <div class="icon-box"><i data-lucide="shopping-cart" size="24"></i></div>
+                    <h3 class="feature-title">Caisse Rapide</h3>
+                    <p>Enregistrez une vente en 3 clics.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="shopping-cart" size="32"></i></div>
-                    <h3 class="feature-title">Caisse Intelligente</h3>
-                    <p>Calculez le total, la monnaie à rendre et gérez les dettes automatiquement si le montant est insuffisant.</p>
+                    <div class="icon-box"><i data-lucide="printer" size="24"></i></div>
+                    <h3 class="feature-title">Tickets & Factures</h3>
+                    <p>Imprimez des tickets (Bluetooth) ou envoyez des factures PDF professionnelles par WhatsApp.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="file-text" size="32"></i></div>
-                    <h3 class="feature-title">Factures Pro</h3>
-                    <p>Générez des factures PDF avec votre logo et signature. Partagez-les sur WhatsApp en un clic.</p>
+                    <div class="icon-box"><i data-lucide="user-check" size="24"></i></div>
+                    <h3 class="feature-title">Dettes Clients</h3>
+                    <p>Suivez qui vous doit de l'argent et depuis quand.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--text-color);">📦 Pour le Stock</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="package" size="24"></i></div>
+                    <h3 class="feature-title">Suivi Temps Réel</h3>
+                    <p>Sachez exactement ce qu'il vous reste.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="shield-check" size="32"></i></div>
-                    <h3 class="feature-title">Sécurité des données</h3>
-                    <p>Vos données sont isolées et sécurisées. Gérez vos vendeurs avec des accès limités.</p>
+                    <div class="icon-box"><i data-lucide="tags" size="24"></i></div>
+                    <h3 class="feature-title">Variantes</h3>
+                    <p>Gérez vos articles par Tailles, Couleurs ou Modèles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="bell" size="24"></i></div>
+                    <h3 class="feature-title">Alertes de Rupture</h3>
+                    <p>Recevez une notification avant que le stock ne soit épuisé.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="clipboard-list" size="24"></i></div>
+                    <h3 class="feature-title">Inventaires Intelligents</h3>
+                    <p>Faites vos inventaires physiques et laissez l'application calculer les écarts.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--text-color);">👥 Pour la Gestion</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="users" size="24"></i></div>
+                    <h3 class="feature-title">Gestion des Vendeurs</h3>
+                    <p>Créez des comptes pour vos employés avec des accès limités.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="briefcase" size="24"></i></div>
+                    <h3 class="feature-title">Module RH & Paie</h3>
+                    <p>Suivez les avances sur salaire et gérez la paie de fin de mois facilement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i data-lucide="trending-up" size="24"></i></div>
+                    <h3 class="feature-title">Statistiques</h3>
+                    <p>Chiffre d'affaires, bénéfices, meilleures ventes... Prenez les bonnes décisions.</p>
                 </div>
             </div>
         </div>
@@ -110,66 +181,68 @@
     <section id="pricing" class="section">
         <div class="container">
             <div class="pricing-card">
-                <h3>Licence à Vie</h3>
-                <div class="price">50.000 <span>FCFA</span></div>
-                <p>Payez une seule fois, l'application est à vous pour toujours.</p>
-                
+                <h3>Un investissement unique pour la vie de votre commerce.</h3>
+                <div class="price">60.000 <span>FCFA</span></div>
+                <p>Paiement Unique</p>
+
                 <ul class="features-list">
-                    <li><i data-lucide="check"></i> Accès illimité sans abonnement</li>
-                    <li><i data-lucide="check"></i> Mises à jour gratuites</li>
-                    <li><i data-lucide="check"></i> Support technique WhatsApp</li>
-                    <li><i data-lucide="check"></i> Sauvegarde Cloud incluse</li>
+                    <li><i data-lucide="check"></i> Licence à vie (Pas d'abonnement mensuel).</li>
+                    <li><i data-lucide="check"></i> Mises à jour futures incluses.</li>
+                    <li><i data-lucide="check"></i> Support technique prioritaire.</li>
+                    <li><i data-lucide="check"></i> Installation et configuration initiale.</li>
+                    <li><i data-lucide="check"></i> Sauvegarde Cloud incluse.</li>
                 </ul>
+                <p style="margin-top: 20px; font-size: 0.9rem; font-style: italic;">"Moins cher que 6 mois d'abonnement
+                    chez la concurrence, mais à vie."</p>
                 <br>
                 <a href="https://wa.me/22371383205" class="btn btn-white">Acheter maintenant</a>
             </div>
         </div>
     </section>
 
-    <section id="guide" class="section">
+    <section id="faq" class="section" style="background-color: var(--bg-card);">
         <div class="container">
-            <h2 class="section-title">Comment commencer ?</h2>
-            <div style="max-width: 900px; margin: 0 auto;">
-                
-                <div class="guide-step">
-                    <div class="step-number">1</div>
-                    <div class="guide-content">
-                        <h3>Téléchargez et Installez</h3>
-                        <p>Cliquez sur le bouton "Télécharger" pour obtenir le fichier APK. Ouvrez-le et autorisez l'installation.</p>
-                    </div>
+            <h2 class="section-title">Foire Aux Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <div class="faq-item" style="margin-bottom: 20px;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Q : Ai-je besoin d'internet pour utiliser
+                        l'application ?</h3>
+                    <p>R : Non ! L'application fonctionne parfaitement sans connexion. Internet n'est nécessaire que
+                        pour sauvegarder vos données en ligne ou synchroniser plusieurs appareils.</p>
                 </div>
-
-                <div class="guide-step">
-                    <div class="step-number">2</div>
-                    <div class="guide-content">
-                        <h3>Créez votre compte Admin</h3>
-                        <p>Ouvrez l'application. Cliquez sur "Créer un compte Admin". Remplissez le formulaire (Nom, Email, Mot de passe). Internet requis.</p>
-                    </div>
+                <div class="faq-item" style="margin-bottom: 20px;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Q : Puis-je l'installer sur plusieurs téléphones
+                        ?</h3>
+                    <p>R : Oui, vous pouvez connecter votre compte Admin sur votre téléphone personnel et créer des
+                        comptes Vendeurs sur les téléphones de la boutique.</p>
                 </div>
-
-                <div class="guide-step">
-                    <div class="step-number">3</div>
-                    <div class="guide-content">
-                        <h3>Demandez l'activation</h3>
-                        <p>Vous verrez un écran d'attente. Cliquez sur le bouton vert <b>"Activer via WhatsApp"</b>. Votre compte sera validé après paiement.</p>
-                    </div>
+                <div class="faq-item" style="margin-bottom: 20px;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Q : Mes données sont-elles en sécurité ?</h3>
+                    <p>R : Absolument. Elles sont stockées sur votre appareil et cryptées sur nos serveurs sécurisés
+                        (Cloud) lors de la sauvegarde.</p>
                 </div>
-
+                <div class="faq-item" style="margin-bottom: 20px;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Q : Comment se passe l'installation ?</h3>
+                    <p>R : Après achat, nous vous fournissons le fichier d'installation (APK) ou un lien de
+                        téléchargement privé, et nous vous aidons à configurer votre boutique.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer id="contact">
         <div class="container">
-            <h3>Gestion Boutique</h3>
-            <p style="color: var(--text-muted); margin-bottom: 20px;">La solution n°1 pour les commerçants au Mali.</p>
-            
+            <h3>Contact</h3>
+            <p style="color: var(--text-muted); margin-bottom: 10px;">WhatsApp : +223 71 38 32 05 / Email :
+                contact@djenika.com</p>
+
             <div class="socials">
                 <a href="https://web.facebook.com/profile.php?id=100004122586881"><i data-lucide="facebook"></i></a>
                 <a href="https://wa.me/22371383205"><i data-lucide="message-circle"></i></a>
+                <a href="#"><i data-lucide="instagram"></i></a>
             </div>
-            
-            <p style="font-size: 0.9rem; margin-top: 30px;">&copy; 2025 Fousseyni Djenika. Tous droits réservés.</p>
+
+            <p style="font-size: 0.9rem; margin-top: 30px;">&copy; 2026 Agence Djenika. Tous droits réservés.</p>
         </div>
     </footer>
 
@@ -177,4 +250,3 @@
 </body>
 
 </html>
-
