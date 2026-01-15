@@ -4,245 +4,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion Boutique - L'application de gestion ultime</title>
-    <meta name="description"
-        content="Gérez votre stock, vos ventes et vos dettes 100% hors ligne. Application mobile pour commerçants au Mali.">
+    <title>Gestion Boutique - L'application de gestion moderne</title>
+    <meta name="description" content="La solution ultime pour gérer stock, ventes et dettes 100% hors ligne.">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <i data-lucide="store"></i> Gestion Boutique
-                </div>
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="store"></i>
+                Gestion Boutique
+            </a>
 
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#features">Fonctionnalités</a></li>
-                    <li><a href="#pricing">Prix</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-                <div class="header-actions">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Mode sombre">
-                        <i data-lucide="moon"></i>
-                    </button>
-                    <button class="menu-btn" id="menuBtn" aria-label="Menu">
-                        <i data-lucide="menu"></i>
-                    </button>
-                </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#features" class="nav-item">Fonctionnalités</a>
+                <a href="#screenshots" class="nav-item">Aperçu</a>
+                <a href="#pricing" class="nav-item">Prix</a>
+                <a href="#faq" class="nav-item">FAQ</a>
             </nav>
+
+            <div class="flex-center" style="gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="menuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="section hero" id="home">
-        <div class="container" style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
-            <div class="hero-content">
-                <h1 class="hero-title">Gérez votre boutique en toute simplicité, <br><span>même sans internet.</span>
+        <!-- Animated Background Blobs -->
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+
+        <div class="container hero-grid">
+            <div class="hero-content reveal stagger-1">
+                <span class="hero-tag">✨ Nouvelle Version 2.0</span>
+                <h1 class="hero-title">
+                    Gérez votre boutique <br>
+                    <span class="text-gradient">simplement & hors ligne.</span>
                 </h1>
                 <p class="hero-desc">
-                    La solution complète pour suivre vos ventes, gérer votre stock et payer vos employés. Une
-                    application moderne conçue pour les commerçants ambitieux.
+                    La solution tout-en-un pour les commerçants ambitieux. Suivez vos ventes, gérez le stock et
+                    contrôlez vos dettes sans internet.
                 </p>
-                <div
-                    style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; md:justify-content: flex-start;">
+                <div class="hero-actions">
                     <a href="#pricing" class="btn btn-primary">
-                        Acheter Maintenant - 60 000 FCFA
+                        Obtenir maintenant
+                        <i data-lucide="arrow-right" size="18"></i>
                     </a>
                     <a href="https://github.com/foussdjenika/Gestion-Boutique/releases/download/V1.1.0/app-arm64-v8a-release.apk"
                         class="btn btn-outline">
-                        <i data-lucide="download"></i> Télécharger
+                        <i data-lucide="download" size="18"></i>
+                        Télécharger APK
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
+
+            <div class="mockup-wrapper reveal stagger-2">
                 <div class="phone-mockup">
-                    <div class="screen-content"></div>
+                    <div class="mockup-screen"></div>
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="floating-card float-1">
+                    <div class="icon-box-sm"><i data-lucide="trending-up"></i></div>
+                    <div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">Ventes du jour</div>
+                        <div style="font-weight: 700;">+ 125 000 F</div>
+                    </div>
+                </div>
+
+                <div class="floating-card float-2">
+                    <div class="icon-box-sm" style="background: var(--accent);"><i data-lucide="check-circle"></i></div>
+                    <div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">Stock mis à jour</div>
+                        <div style="font-weight: 700;">Succès</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" style="background-color: var(--bg-card);">
-        <div class="container">
-            <h2 class="section-title">Pourquoi choisir notre solution ?</h2>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="smartphone" size="32"></i></div>
-                    <h3 class="feature-title">100% Mobile & Offline</h3>
-                    <p>Pas besoin de PC, pas besoin de connexion internet permanente. Tout se passe sur votre téléphone
-                        ou tablette.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="layers" size="32"></i></div>
-                    <h3 class="feature-title">Tout-en-un</h3>
-                    <p>Oubliez les cahiers de notes et les fichiers Excel compliqués. Ventes, Dépenses, Dettes, Salaires
-                        : tout est là.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="shield-check" size="32"></i></div>
-                    <h3 class="feature-title">Sécurité Maximale</h3>
-                    <p>Vos données sont sauvegardées automatiquement dès que vous avez internet. En cas de perte de
-                        téléphone, vous ne perdez rien.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Features Section -->
     <section id="features" class="section">
         <div class="container">
-            <h2 class="section-title">Fonctionnalités Clés</h2>
-
-            <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--text-color);">🛒 Pour la Vente</h3>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="shopping-cart" size="24"></i></div>
-                    <h3 class="feature-title">Caisse Rapide</h3>
-                    <p>Enregistrez une vente en 3 clics.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="printer" size="24"></i></div>
-                    <h3 class="feature-title">Tickets & Factures</h3>
-                    <p>Imprimez des tickets (Bluetooth) ou envoyez des factures PDF professionnelles par WhatsApp.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="user-check" size="24"></i></div>
-                    <h3 class="feature-title">Dettes Clients</h3>
-                    <p>Suivez qui vous doit de l'argent et depuis quand.</p>
-                </div>
+            <div class="section-header reveal">
+                <span class="section-tag">Pourquoi nous choisir</span>
+                <h2 class="text-gradient" style="font-size: 2.5rem;">Une gestion complète</h2>
             </div>
 
-            <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--text-color);">📦 Pour le Stock</h3>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="package" size="24"></i></div>
-                    <h3 class="feature-title">Suivi Temps Réel</h3>
-                    <p>Sachez exactement ce qu'il vous reste.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="tags" size="24"></i></div>
-                    <h3 class="feature-title">Variantes</h3>
-                    <p>Gérez vos articles par Tailles, Couleurs ou Modèles.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="bell" size="24"></i></div>
-                    <h3 class="feature-title">Alertes de Rupture</h3>
-                    <p>Recevez une notification avant que le stock ne soit épuisé.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="clipboard-list" size="24"></i></div>
-                    <h3 class="feature-title">Inventaires Intelligents</h3>
-                    <p>Faites vos inventaires physiques et laissez l'application calculer les écarts.</p>
-                </div>
-            </div>
+            <div class="grid" style="gap: 4rem;">
 
-            <h3 style="margin-top: 40px; margin-bottom: 20px; color: var(--text-color);">👥 Pour la Gestion</h3>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="users" size="24"></i></div>
-                    <h3 class="feature-title">Gestion des Vendeurs</h3>
-                    <p>Créez des comptes pour vos employés avec des accès limités.</p>
+                <!-- Category 1 -->
+                <div>
+                    <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="shopping-cart" style="color: var(--primary);"></i> Ventes & Caisse
+                    </h3>
+                    <div class="features-grid">
+                        <div class="feature-card reveal stagger-1">
+                            <div class="f-icon"><i data-lucide="zap"></i></div>
+                            <h3>Caisse Rapide</h3>
+                            <p style="color: var(--text-muted);">Enregistrez une vente en quelques secondes. Interface
+                                intuitive optimisée pour la vitesse.</p>
+                        </div>
+                        <div class="feature-card reveal stagger-2">
+                            <div class="f-icon"><i data-lucide="printer"></i></div>
+                            <h3>Reçus & Factures</h3>
+                            <p style="color: var(--text-muted);">Imprimez des tickets via Bluetooth ou envoyez des
+                                factures PDF professionnelles par WhatsApp.</p>
+                        </div>
+                        <div class="feature-card reveal stagger-3">
+                            <div class="f-icon"><i data-lucide="users"></i></div>
+                            <h3>Gestion Dettes</h3>
+                            <p style="color: var(--text-muted);">Suivez précisément qui vous doit de l'argent et depuis
+                                quand. Ne perdez plus un franc.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="briefcase" size="24"></i></div>
-                    <h3 class="feature-title">Module RH & Paie</h3>
-                    <p>Suivez les avances sur salaire et gérez la paie de fin de mois facilement.</p>
+
+                <!-- Category 2 -->
+                <div>
+                    <h3 style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="package" style="color: var(--accent);"></i> Stock & Inventaire
+                    </h3>
+                    <div class="features-grid">
+                        <div class="feature-card reveal stagger-1">
+                            <div class="f-icon"><i data-lucide="bar-chart-2"></i></div>
+                            <h3>Suivi Temps Réel</h3>
+                            <p style="color: var(--text-muted);">Visualisez votre stock instantanément. Gérez les
+                                variantes (tailles, couleurs) facilement.</p>
+                        </div>
+                        <div class="feature-card reveal stagger-2">
+                            <div class="f-icon"><i data-lucide="alert-circle"></i></div>
+                            <h3>Alertes Rupture</h3>
+                            <p style="color: var(--text-muted);">Soyez notifié avant que vos produits phares ne soient
+                                épuisés.</p>
+                        </div>
+                        <div class="feature-card reveal stagger-3">
+                            <div class="f-icon"><i data-lucide="clipboard-check"></i></div>
+                            <h3>Inventaires</h3>
+                            <p style="color: var(--text-muted);">Faites vos inventaires périodiques et laissez
+                                l'application calculer les écarts automatiquement.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i data-lucide="trending-up" size="24"></i></div>
-                    <h3 class="feature-title">Statistiques</h3>
-                    <p>Chiffre d'affaires, bénéfices, meilleures ventes... Prenez les bonnes décisions.</p>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="section" style="background-color: var(--bg-card);">
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="section" style="background: var(--bg-glass);">
         <div class="container">
-            <h2 class="section-title">Aperçu de l'application</h2>
-            <div class="screenshots-grid">
-                <img src="assets/image_1.png" class="screenshot-item" alt="Dashboard">
-                <img src="assets/image_2.PNG" class="screenshot-item" alt="Caisse">
-                <img src="assets/image_3.PNG" class="screenshot-item" alt="Historique">
-                <img src="assets/image_4.PNG" class="screenshot-item" alt="Facture">
-                <img src="assets/image_5.PNG" class="screenshot-item" alt="Produits">
-                <img src="assets/image_6.PNG" class="screenshot-item" alt="Validation vente">
-                <img src="assets/image_7.PNG" class="screenshot-item" alt="Personnalisation">
+            <div class="section-header reveal">
+                <span class="section-tag">Interface</span>
+                <h2 class="text-gradient" style="font-size: 2.5rem;">Aperçu de l'application</h2>
+            </div>
+
+            <div class="screenshots-scroller reveal">
+                <!-- Using existing assets -->
+                <img src="assets/image_1.png" class="screen-item" alt="Dashboard" width="280">
+                <img src="assets/image_2.PNG" class="screen-item" alt="Caisse" width="280">
+                <img src="assets/image_3.PNG" class="screen-item" alt="Historique" width="280">
+                <img src="assets/image_5.PNG" class="screen-item" alt="Produits" width="280">
+                <img src="assets/image_4.PNG" class="screen-item" alt="Facture" width="280">
             </div>
         </div>
     </section>
 
+    <!-- Pricing Section -->
     <section id="pricing" class="section">
         <div class="container">
-            <div class="pricing-card">
-                <h3>Un investissement unique pour la vie de votre commerce.</h3>
-                <div class="price">60.000 <span>FCFA</span></div>
-                <p>Paiement Unique</p>
+            <div class="section-header reveal">
+                <span class="section-tag">Offre Unique</span>
+                <h2 class="text-gradient" style="font-size: 2.5rem;">Un prix simple, pour la vie</h2>
+            </div>
 
-                <ul class="features-list">
-                    <li><i data-lucide="check"></i> Licence à vie (Pas d'abonnement mensuel).</li>
-                    <li><i data-lucide="check"></i> Mises à jour futures incluses.</li>
-                    <li><i data-lucide="check"></i> Support technique prioritaire.</li>
-                    <li><i data-lucide="check"></i> Installation et configuration initiale.</li>
-                    <li><i data-lucide="check"></i> Sauvegarde Cloud incluse.</li>
-                </ul>
-                <p style="margin-top: 20px; font-size: 0.9rem; font-style: italic;">"Moins cher que 6 mois d'abonnement
-                    chez la concurrence, mais à vie."</p>
-                <br>
-                <a href="https://wa.me/22371383205" class="btn btn-white">Acheter maintenant</a>
+            <div class="pricing-wrapper reveal">
+                <div class="pricing-card">
+                    <div class="pricing-bg-shape"></div>
+
+                    <h3>Licence à Vie</h3>
+                    <div class="price-tag">60.000 <span style="font-size: 1.5rem;">FCFA</span></div>
+                    <div class="price-period">Paiement Unique</div>
+
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle" class="check-icon"></i>
+                            <span>Usage illimité sans abonnement</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle" class="check-icon"></i>
+                            <span>Mises à jour futures incluses</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle" class="check-icon"></i>
+                            <span>Support technique prioritaire</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle" class="check-icon"></i>
+                            <span>Installation & Formation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle" class="check-icon"></i>
+                            <span>Sauvegarde Cloud Sécurisée</span>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/22371383205" class="btn"
+                        style="background: white; color: var(--primary); width: 100%; justify-content: center;">
+                        <i data-lucide="message-circle"></i>
+                        Acheter via WhatsApp
+                    </a>
+
+                    <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.6;">Satisfait ou remboursé sous 30 jours
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="section" style="background-color: var(--bg-card);">
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
         <div class="container">
-            <h2 class="section-title">Foire Aux Questions</h2>
-            <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-                <div class="faq-item" style="margin-bottom: 20px;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Q : Ai-je besoin d'internet pour utiliser
-                        l'application ?</h3>
-                    <p>R : Non ! L'application fonctionne parfaitement sans connexion. Internet n'est nécessaire que
-                        pour sauvegarder vos données en ligne ou synchroniser plusieurs appareils.</p>
+            <div class="section-header reveal">
+                <h2 class="text-gradient" style="font-size: 2rem;">Questions Fréquentes</h2>
+            </div>
+
+            <div class="faq-grid reveal">
+                <div class="faq-card">
+                    <h3>Ai-je besoin d'internet ?</h3>
+                    <p style="color: var(--text-muted);">Non ! L'application est conçue pour fonctionner 100% hors
+                        ligne. Internet n'est nécessaire que pour les sauvegardes.</p>
                 </div>
-                <div class="faq-item" style="margin-bottom: 20px;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Q : Puis-je l'installer sur plusieurs téléphones
-                        ?</h3>
-                    <p>R : Oui, vous pouvez connecter votre compte Admin sur votre téléphone personnel et créer des
-                        comptes Vendeurs sur les téléphones de la boutique.</p>
+                <div class="faq-card">
+                    <h3>Puis-je l'utiliser sur plusieurs téléphones ?</h3>
+                    <p style="color: var(--text-muted);">Oui, vous pouvez connecter votre compte Admin sur votre
+                        téléphone personnel et créer des comptes Vendeurs limités pour la boutique.</p>
                 </div>
-                <div class="faq-item" style="margin-bottom: 20px;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Q : Mes données sont-elles en sécurité ?</h3>
-                    <p>R : Absolument. Elles sont stockées sur votre appareil et cryptées sur nos serveurs sécurisés
-                        (Cloud) lors de la sauvegarde.</p>
-                </div>
-                <div class="faq-item" style="margin-bottom: 20px;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Q : Comment se passe l'installation ?</h3>
-                    <p>R : Après achat, nous vous fournissons le fichier d'installation (APK) ou un lien de
-                        téléchargement privé, et nous vous aidons à configurer votre boutique.</p>
+                <div class="faq-card">
+                    <h3>Mes données sont-elles sécurisées ?</h3>
+                    <p style="color: var(--text-muted);">Absolument. Vos données sont stockées localement et cryptées
+                        lors de l'envoi sur nos serveurs de sauvegarde.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <div class="container">
-            <h3>Contact</h3>
-            <p style="color: var(--text-muted); margin-bottom: 10px;">WhatsApp : +223 71 38 32 05 / Email :
-                contact@djenika.com</p>
 
-            <div class="socials">
-                <a href="https://web.facebook.com/profile.php?id=100004122586881"><i data-lucide="facebook"></i></a>
-                <a href="https://wa.me/22371383205"><i data-lucide="message-circle"></i></a>
-                <a href="#"><i data-lucide="instagram"></i></a>
+    <!-- Contact Form Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Contactez-nous</span>
+                <h2 class="text-gradient" style="font-size: 2rem;">Envoyez-nous un message</h2>
             </div>
 
-            <p style="font-size: 0.9rem; margin-top: 30px;">&copy; 2026 Agence Djenika. Tous droits réservés.</p>
+            <div class="contact-container reveal">
+                <form id="contactForm" action="https://formspree.io/f/mojjvnvl" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Votre Nom</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Ex: Moussa Diarra"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Votre Email</label>
+                        <input type="email" id="email" name="email" class="form-input"
+                            placeholder="Ex: moussa@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Sujet</label>
+                        <input type="text" id="subject" name="subject" class="form-input"
+                            placeholder="Demande d'information" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Votre message ici..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="btn btn-primary"
+                        style="width: 100%; justify-content: center;">
+                        <i data-lucide="send"></i> Envoyer le message
+                    </button>
+
+                    <p id="formStatus"
+                        style="text-align: center; margin-top: 1rem; font-size: 0.9rem; min-height: 1.5rem;"></p>
+
+                    <!-- Fallback explicit email -->
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        Ou écrivez directement à : <a href="mailto:fousseynidjenika@gmail.com"
+                            style="color: var(--primary);">fousseynidjenika@gmail.com</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="logo" style="font-size: 1.25rem;">
+                <i data-lucide="store"></i> Gestion Boutique
+            </div>
+
+            <div class="social-links">
+                <a href="https://wa.me/22371383205" class="social-btn" aria-label="WhatsApp">
+                    <i data-lucide="message-circle"></i>
+                </a>
+                <a href="https://web.facebook.com/profile.php?id=100004122586881" class="social-btn"
+                    aria-label="Facebook">
+                    <i data-lucide="facebook"></i>
+                </a>
+                <a href="mailto:fousseynidjenika@gmail.com" class="social-btn" aria-label="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+                &copy; 2026 Fousseyni Djenika. Tous droits réservés.
+            </p>
         </div>
     </footer>
 
